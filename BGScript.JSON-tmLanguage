@@ -1,0 +1,164 @@
+{
+    "fileTypes": [
+        "bgs"
+    ],
+    "name": "BGScript",
+    "patterns": [
+
+        {
+            "match": "(?<!\\S)(#)(?!\\{).*$\n?",
+            "name": "comment.line.bgscript",
+            "comment" : "Line comments"
+        },
+        {
+            "match": "\\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\\.[0-9]+)?))\\b",
+            "name" : "constant.numeric.bgscript",
+            "comment" : "Numeric constants"
+        },
+        {
+            "match": "\\$([0-9a-fA-F]+)",
+            "name" : "support.constant.bgscript",
+            "comment" : "Hexadecimal numeric constants"
+        },
+        {
+            "match": "\\b(const|dim)\\b",
+            "name": "storage.type.bgscript",
+            "comment": "Variable types"
+        },
+        {
+            "match": "\\b(event)\\b",
+            "name": "entity.name.bgscript",
+            "comment": "Begin of event callback definition"
+        },
+        {
+            "match": "\\b(end)$",
+            "name": "entity.name.bgscript",
+            "comment": "End of event callback definition"
+        },
+        {
+            "match": "\\b(end if|end while|if|else|then|call|while|let|sfloat|float|memcpy|memcmp)\\b",
+            "name": "keyword.control.bgscript",
+            "comment" : "Control keywords"
+        },
+
+        {
+            "match": "\\b(system_boot|system_debug|system_endpoint_watermark_rx|system_endpoint_watermark_tx|system_endpoint_rx|system_script_failure)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "System events"
+        },
+        {
+            "match": "\\b(system_endpoint_api|system_endpoint_test|system_endpoint_script|system_endpoint_usb|system_endpoint_uart0|system_endpoint_uart1)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "System constants"
+        },
+        {
+            "match": "\\b(system_reset|system_hello|system_address_get|system_reg_write|system_reg_read|system_get_counters|system_get_connections|system_read_memory|system_get_info|system_endpoint_tx|system_whitelist_append|system_whitelist_remove|system_whitelist_clear|system_endpoint_set_watermarks)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "System commands"
+        },
+        {
+            "match": "\\b(flash_ps_key)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Persistent storage events"
+        },
+        {
+            "match": "\\b(flash_ps_defrag|flash_ps_dump|flash_ps_erase_all|flash_ps_save|flash_ps_load|flash_ps_erase|flash_erase_page|flash_write_words)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Persistent storage commands"
+        },
+
+        {
+            "match": "\\b(attributes_value|attributes_user_read_request|attributes_status)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Attribute database events"
+        },
+        {
+            "match": "\\b(attributes_write|attributes_read|attributes_read_type|attributes_user_read_response|attributes_user_write_response)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Attribute database commands"
+        },
+        {
+            "match": "\\b(attributes_attribute_change_reason_write_request|attributes_attribute_change_reason_write_command|attributes_attribute_change_reason_write_request_user|attributes_attribute_status_flag_notify|attributes_attribute_status_flag_indicate)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "Attribute database constants"
+        },
+        {
+            "match": "\\b(connection_status|connection_version_ind|connection_feature_ind|connection_raw_rx|connection_disconnected)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Connection events"
+        },
+        {
+            "match": "\\b(connection_disconnect|connection_get_rssi|connection_update|connection_version_update|connection_channel_map_get|connection_channel_map_set|connection_features_get|connection_get_status|connection_raw_tx)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Connection commands"
+        },
+        {
+            "match": "\\b(connection_connected|connection_encrypted|connection_completed|connection_parameters_change)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "Connection constants"
+        },
+        {
+            "match": "\\b(attclient_indicated|attclient_procedure_completed|attclient_group_found|attclient_attribute_found|attclient_find_information_found|attclient_attribute_value|attclient_read_multiple_response)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Attribute client events"
+        },
+        {
+            "match": "\\b(attclient_find_by_type_value|attclient_read_by_group_type|attclient_read_by_type|attclient_find_information|attclient_read_by_handle|attclient_attribute_write|attclient_write_command|attclient_indicate_confirm|attclient_read_long|attclient_prepare_write|attclient_execute_write|attclient_read_multiple)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Attribute client commands"
+        },
+        {
+            "match": "\\b(attclient_attribute_value_type_read|attclient_attribute_value_type_notify|attclient_attribute_value_type_indicate|attclient_attribute_value_type_read_by_type|attclient_attribute_value_type_read_blob|attclient_attribute_value_type_indicate_rsp_req)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "Attribute client constants"
+        },
+        {
+            "match": "\\b(sm_smp_data|sm_bonding_fail|sm_passkey_display|sm_passkey_request|sm_bond_status)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Security Manager events"
+        },
+        {
+            "match": "\\b(sm_encrypt_start|sm_set_bondable_mode|sm_delete_bonding|sm_set_parameters|sm_passkey_entry|sm_get_bonds|sm_set_oob_data)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Security Manager commands"
+        },
+        {
+            "match": "\\b(sm_bonding_key_ltk|sm_bonding_key_addr_public|sm_bonding_key_addr_static|sm_bonding_key_irk|sm_bonding_key_edivrand|sm_bonding_key_csrk|sm_bonding_key_masterid|sm_io_capability_displayonly|sm_io_capability_displayyesno|sm_io_capability_keyboardonly|sm_io_capability_noinputnooutput|sm_io_capability_keyboarddisplay)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "Security Manager constants"
+        },
+        {
+            "match": "\\b(gap_scan_response|gap_mode_changed)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "GAP events"
+        },
+        {
+            "match": "\\b(gap_set_privacy_flags|gap_set_mode|gap_discover|gap_connect_direct|gap_end_procedure|gap_connect_selective|gap_set_filtering|gap_set_scan_parameters|gap_set_adv_parameters|gap_set_adv_data|gap_set_directed_connectable_mode)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "GAP commands"
+        },
+        {
+            "match": "\\b(gap_address_type_public|gap_address_type_random|gap_non_discoverable|gap_limited_discoverable|gap_general_discoverable|gap_broadcast|gap_user_data|gap_non_connectable|gap_directed_connectable|gap_undirected_connectable|gap_scannable_connectable|gap_discover_limited|gap_discover_generic|gap_discover_observation|gap_ad_type_none|gap_ad_type_flags|gap_ad_type_services_16bit_more|gap_ad_type_services_16bit_all|gap_ad_type_services_32bit_more|gap_ad_type_services_32bit_all|gap_ad_type_services_128bit_more|gap_ad_type_services_128bit_all|gap_ad_type_localname_short|gap_ad_type_localname_complete|gap_ad_type_txpower|gap_adv_policy_all|gap_adv_policy_whitelist_scan|gap_adv_policy_whitelist_connect|gap_adv_policy_whitelist_all|gap_scan_policy_all|gap_scan_policy_whitelist|gap_scan_header_adv_ind|gap_scan_header_adv_direct_ind|gap_scan_header_adv_nonconn_ind|gap_scan_header_scan_req|gap_scan_header_scan_rsp|gap_scan_header_connect_req|gap_scan_header_adv_discover_ind|gap_AD_FLAG_LIMITED_DISCOVERABLE|gap_AD_FLAG_GENERAL_DISCOVERABLE|gap_AD_FLAG_BREDR_NOT_SUPPORTED|gap_AD_FLAG_SIMULTANEOUS_LEBREDR_CTRL|gap_AD_FLAG_SIMULTANEOUS_LEBREDR_HOST|gap_AD_FLAG_MASK)\\b",
+            "name": "support.constant.bgscript",
+            "comment" : "GAP constants"
+        },
+        {
+            "match": "\\b(hardware_io_port_status|hardware_soft_timer|hardware_adc_result)\\b",
+            "name": "support.variable.bgscript",
+            "comment" : "Hardware events"
+        },
+        {
+            "match": "\\b(hardware_io_port_config_irq|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Hardware commands"
+        },
+        {
+            "match": "\\b(test_phy_tx|test_phy_rx|test_phy_end|test_phy_reset|test_get_channel_map|test_debug)\\b",
+            "name": "support.function.bgscript",
+            "comment" : "Test commands"
+        }
+
+    ],
+    "scopeName": "source.bgscript",
+    "uuid": "90564DB2-FB5D-4DC9-B312-BDDEB11DA70E"
+}
