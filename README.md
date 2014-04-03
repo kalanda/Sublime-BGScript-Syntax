@@ -14,3 +14,7 @@ Download and extract to Sublime Text 2 Packages folder
   * Linux: ~/.config/sublime-text-2/Packages
   * Windows: %APPDATA%\Sublime Text 2\Packages
 4. Rename folder to BGScript.
+
+## BGScript API Version
+
+The syntax highlighting is up to date for version 1.2.2 of the BGScript API
