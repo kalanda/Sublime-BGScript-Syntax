@@ -119,7 +119,7 @@
 			<key>comment</key>
 			<string>Persistent storage commands</string>
 			<key>match</key>
-			<string>\b(flash_ps_defrag|flash_ps_dump|flash_ps_erase_all|flash_ps_save|flash_ps_load|flash_ps_erase|flash_erase_page|flash_write_words)\b</string>
+			<string>\b(flash_ps_defrag|flash_ps_dump|flash_ps_erase_all|flash_ps_save|flash_ps_load|flash_ps_erase|flash_erase_page|flash_write_words|flash_read_data|flash_write_data)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -255,7 +255,7 @@
 			<key>comment</key>
 			<string>Hardware commands</string>
 			<key>match</key>
-			<string>\b(hardware_io_port_config_irq|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator)\b</string>
+			<string>\b(hardware_io_port_config_irq|hardware_io_port_irq_enable|hardware_io_port_irq_direction|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
