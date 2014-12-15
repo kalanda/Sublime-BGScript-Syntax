@@ -17,4 +17,4 @@ Download and extract to Sublime Text 2 Packages folder
 
 ## BGScript API Version
 
-The syntax highlighting is up to date for version 1.2.2 of the BGScript API
+The syntax highlighting is up to date for version 1.3.1 of the BGScript API
