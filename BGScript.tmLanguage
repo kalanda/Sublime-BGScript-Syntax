@@ -79,7 +79,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>\b(end if|end while|if|else|then|call|while|let|sfloat|float|memcpy|memcmp)\b</string>
+			<string>\b(end if|end while|if|else|then|call|while|let|sfloat|float|memcpy|memcmp|memset)\b</string>
 			<key>name</key>
 			<string>keyword.control.bgscript</string>
 		</dict>
@@ -103,7 +103,7 @@
 			<key>comment</key>
 			<string>System commands</string>
 			<key>match</key>
-			<string>\b(system_reset|system_hello|system_address_get|system_reg_write|system_reg_read|system_get_counters|system_get_connections|system_read_memory|system_get_info|system_endpoint_tx|system_whitelist_append|system_whitelist_remove|system_whitelist_clear|system_endpoint_set_watermarks)\b</string>
+			<string>\b(system_reset|system_aes_decrypt|system_aes_encrypt|system_aes_setkey|system_hello|system_address_get|system_reg_write|system_reg_read|system_get_counters|system_get_connections|system_read_memory|system_get_info|system_endpoint_tx|system_whitelist_append|system_whitelist_remove|system_whitelist_clear|system_endpoint_set_watermarks)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -135,7 +135,7 @@
 			<key>comment</key>
 			<string>Attribute database commands</string>
 			<key>match</key>
-			<string>\b(attributes_write|attributes_read|attributes_read_type|attributes_user_read_response|attributes_user_write_response)\b</string>
+			<string>\b(attributes_write|attributes_read|attributes_read_type|attributes_user_read_response|attributes_send|attributes_user_write_response)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -207,7 +207,7 @@
 			<key>comment</key>
 			<string>Security Manager commands</string>
 			<key>match</key>
-			<string>\b(sm_encrypt_start|sm_set_bondable_mode|sm_delete_bonding|sm_set_parameters|sm_passkey_entry|sm_get_bonds|sm_set_oob_data)\b</string>
+			<string>\b(sm_encrypt_start|sm_set_bondable_mode|sm_delete_bonding|sm_set_parameters|sm_passkey_entry|sm_get_bonds|sm_whitelist_bonds|sm_set_oob_data)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -255,7 +255,7 @@
 			<key>comment</key>
 			<string>Hardware commands</string>
 			<key>match</key>
-			<string>\b(hardware_io_port_config_irq|hardware_io_port_irq_enable|hardware_io_port_irq_direction|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator|hardware_analog_comparator_config_irq|hardware_analog_comparator_enable|hardware_analog_comparator_read)\b</string>
+			<string>\b(hardware_io_port_config_irq|hardware_io_port_irq_enable|hardware_io_port_irq_direction|hardware_set_rxgain|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator|hardware_analog_comparator_config_irq|hardware_analog_comparator_enable|hardware_analog_comparator_read|hardware_usb_enable)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
