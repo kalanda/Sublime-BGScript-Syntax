@@ -1,18 +1,21 @@
 Sublime-BGScript
 ================
 
-Sublime Text 2 syntax for BGScript (Bluegiga)
+Sublime Text syntax for BGScript (Bluegiga)
 
 ## Installation
 
-Download and extract to Sublime Text 2 Packages folder
+Download and extract to Sublime Text Packages folder
 
 1. Download a [zipball](https://github.com/kalanda/Sublime-BGScript/zipball/master) or [tarball](https://github.com/kalanda/Sublime-BGScript/tarball/master)
 2. Extract the plugin
 3. Copy it to your packages directory:
   * Mac OS X: ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+  * Mac OS X: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
   * Linux: ~/.config/sublime-text-2/Packages
+  * Linux: ~/.config/sublime-text-3/Packages
   * Windows: %APPDATA%\Sublime Text 2\Packages
+  * Windows: %APPDATA%\Sublime Text 3\Packages
 4. Rename folder to BGScript.
 
 ## BGScript API Version
