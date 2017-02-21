@@ -159,7 +159,7 @@
 			<key>comment</key>
 			<string>Connection commands</string>
 			<key>match</key>
-			<string>\b(connection_disconnect|connection_get_rssi|connection_update|connection_version_update|connection_channel_map_get|connection_channel_map_set|connection_features_get|connection_get_status|connection_raw_tx)\b</string>
+			<string>\b(connection_disconnect|connection_get_rssi|connection_update|connection_version_update|connection_channel_map_get|connection_channel_map_set|connection_features_get|connection_get_status|connection_raw_tx|connection_slave_latency_disable|set_initiating_con_parameters)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -207,7 +207,7 @@
 			<key>comment</key>
 			<string>Security Manager commands</string>
 			<key>match</key>
-			<string>\b(sm_encrypt_start|sm_set_bondable_mode|sm_delete_bonding|sm_set_parameters|sm_passkey_entry|sm_get_bonds|sm_whitelist_bonds|sm_set_oob_data)\b</string>
+			<string>\b(sm_encrypt_start|sm_set_bondable_mode|sm_delete_bonding|sm_set_parameters|sm_passkey_entry|sm_get_bonds|sm_whitelist_bonds|sm_set_oob_data|sm_set_pairing_distribution_keys)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -231,7 +231,7 @@
 			<key>comment</key>
 			<string>GAP commands</string>
 			<key>match</key>
-			<string>\b(gap_set_privacy_flags|gap_set_mode|gap_discover|gap_connect_direct|gap_end_procedure|gap_connect_selective|gap_set_filtering|gap_set_scan_parameters|gap_set_adv_parameters|gap_set_adv_data|gap_set_directed_connectable_mode)\b</string>
+			<string>\b(gap_set_privacy_flags|gap_set_mode|gap_discover|gap_connect_direct|gap_end_procedure|gap_connect_selective|gap_set_filtering|gap_set_scan_parameters|gap_set_adv_parameters|gap_set_adv_data|gap_set_directed_connectable_mode|gap_set_nonresolvable_address)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
@@ -255,7 +255,7 @@
 			<key>comment</key>
 			<string>Hardware commands</string>
 			<key>match</key>
-			<string>\b(hardware_io_port_config_irq|hardware_io_port_irq_enable|hardware_io_port_irq_direction|hardware_set_rxgain|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator|hardware_analog_comparator_config_irq|hardware_analog_comparator_enable|hardware_analog_comparator_read|hardware_usb_enable)\b</string>
+			<string>\b(hardware_io_port_config_irq|hardware_io_port_irq_enable|hardware_io_port_irq_direction|hardware_set_rxgain|hardware_set_soft_timer|hardware_adc_read|hardware_io_port_config_direction|hardware_io_port_config_function|hardware_io_port_config_pull|hardware_io_port_write|hardware_io_port_read|hardware_spi_config|hardware_spi_transfer|hardware_i2c_read|hardware_i2c_write|hardware_set_txpower|hardware_timer_comparator|hardware_analog_comparator_config_irq|hardware_analog_comparator_enable|hardware_analog_comparator_read|hardware_usb_enable|hardware_sleep_enable)\b</string>
 			<key>name</key>
 			<string>support.function.bgscript</string>
 		</dict>
